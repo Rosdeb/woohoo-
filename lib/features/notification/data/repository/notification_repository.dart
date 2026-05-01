@@ -1,3 +1,4 @@
+import 'package:deeraj/core/theme/app_color.dart';
 import 'package:flutter/material.dart';
 import '../models/notification_model.dart';
 
@@ -16,14 +17,15 @@ class NotificationRepository implements INotificationRepository {
         title: 'Maya is going to Tipo 00 tonight',
         timeLabel: '2m',
         initial: 'M',
-        color: Colors.orange,
+        color: AppColors.orange,
         isUnread: true,
       ),
       AppNotification(
         id: '2',
         title: 'Challenge unlocked: Live & Loud complete',
         timeLabel: '1h',
-        emoji: '🏆',
+        emoji: 'R',
+        color: AppColors.orange,
         type: NotificationType.challenge,
         isUnread: true,
       ),

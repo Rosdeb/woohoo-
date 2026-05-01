@@ -24,7 +24,6 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
     // 1. Warm up the providers
     // This starts fetching notifications in the background during the splash
     ref.read(notificationsProvider.future);
-
     // 2. Wait for 3 seconds
     await Future.delayed(const Duration(seconds: 3));
 

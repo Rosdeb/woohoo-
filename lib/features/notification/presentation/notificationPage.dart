@@ -17,26 +17,32 @@ class NotificationPage extends ConsumerWidget {
 
     return Scaffold(
       backgroundColor: const Color(0xFF0F110C),
-      body: Column(
-        children: [
-          SizedBox(height: size.height * 0.2,),
-          WoohooLogo(),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-            AppText("Notifications",color: AppColors.white,fontSize: 22,fontWeight: FontWeight.w700,),
-            AppText("Mark all",color: AppColors.primary,fontWeight: FontWeight.w500,),
-            ],
-          ),
-          notificationsAsync.when(
-            data: (list) => ListView.builder(
-              itemCount: list.length,
-              itemBuilder: (context, index) => NotificationTile(notification: list[index]),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 18.0),
+        child: Column(
+          children: [
+            SizedBox(height: size.height * 0.04,),
+            WoohooLogo(),
+            SizedBox(height: size.height * 0.01,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+              AppText("Notifications",color: AppColors.white,fontSize: 22,fontWeight: FontWeight.w700,),
+              AppText("Mark all",color: AppColors.primary,fontWeight: FontWeight.bold,fontSize: 16,),
+              ],
             ),
-            loading: () => const Center(child: CupertinoActivityIndicator()),
-            error: (err, stack) => Center(child: Text('Error: $err')),
-          ),
-        ],
+            notificationsAsync.when(
+              data: (list) => Expanded(
+                child: ListView.builder(
+                  itemCount: list.length,
+                  itemBuilder: (context, index) => NotificationTile(notification: list[index]),
+                ),
+              ),
+              loading: () => const Center(child: CupertinoActivityIndicator()),
+              error: (err, stack) => Center(child: Text('Error: $err')),
+            ),
+          ],
+        ),
       ),
     );
   }

@@ -1,7 +1,6 @@
 import 'package:deeraj/core/components/AppText/appText.dart';
 import 'package:flutter/material.dart';
-
-import '../../../core/theme/app_color.dart';
+import '../../../../core/theme/app_color.dart';
 
 class TopPickCard extends StatelessWidget {
   final String title;

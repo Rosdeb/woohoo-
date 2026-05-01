@@ -1,5 +1,6 @@
 import 'package:deeraj/core/error/ErrorPage/errorpage.dart';
 import 'package:deeraj/core/router/route_names.dart';
+import 'package:deeraj/features/challenges/presentation/screen/challenges_screen.dart';
 import 'package:deeraj/features/home/presentation/screen/home_screen.dart';
 import 'package:deeraj/features/notification/presentation/notificationPage.dart';
 import 'package:flutter/material.dart';
@@ -35,12 +36,12 @@ class MyAppRouter {
         pageBuilder: (context, state) =>
             MaterialPage(child: HomePage()),
       ),
-      // GoRoute(
-      //   path: AppPath.register,
-      //   name: AppRouteName.register,
-      //   pageBuilder: (context, state) =>
-      //       MaterialPage(child: Registrationscreen()),
-      // ),
+      GoRoute(
+        path: AppPath.challenges_screen,
+        name: AppRouteName.challenges_screen,
+        pageBuilder: (context, state) =>
+            MaterialPage(child: ChallengesScreen()),
+      ),
       // GoRoute(
       //   path: AppPath.notedetails,
       //   name: AppRouteName.notedetails,

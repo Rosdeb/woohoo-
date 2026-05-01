@@ -9,6 +9,8 @@ abstract class AppRouteName {
   static const verifyscreen  = '/verifyscreen';
   static const home     = '/home_screen';
   static const notification = '/notificationPage';
+  static const challenges_screen = '/challenges_screen';
+
 
 }
 
@@ -22,5 +24,6 @@ abstract class AppPath {
   static const editScreen  = '/editScreen';
   static const verifyscreen  = '/verifyscreen';
   static const notification = '/notificationPage';
+  static const challenges_screen = '/challenges_screen';
 
 }

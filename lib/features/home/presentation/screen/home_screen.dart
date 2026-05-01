@@ -4,11 +4,10 @@ import 'package:deeraj/core/constants/app_constants.dart';
 import 'package:deeraj/core/router/route_names.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
 import '../../../../core/components/WoohooLogo/woohooLogo.dart';
 import '../../../../core/theme/app_color.dart';
-import '../../widgets/ChallengeProgressBar.dart';
-import '../../widgets/TopPickCard.dart';
+import '../widgets/ChallengeProgressBar.dart';
+import '../widgets/TopPickCard.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

@@ -137,6 +137,8 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
               ),
               const Spacer(),
               CircularProgressIndicator(color: AppColors.Primary,strokeWidth: 1.8,),
+              SizedBox(height: size.height * 0.3),
+
             ],
           ),
         ),

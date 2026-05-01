@@ -31,7 +31,7 @@ class HomePage extends StatelessWidget {
                   const WoohooLogo(),
                   IosTapEffect(
                     onTap: (){
-                      context.goNamed(AppPath.notification);
+                      context.push(AppPath.notification);
                     },
                     child: Container(
                       padding: EdgeInsets.all(5),

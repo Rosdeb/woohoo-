@@ -1,3 +1,4 @@
+import 'package:deeraj/core/constants/app_constants.dart';
 import 'package:flutter/material.dart';
 import '../../theme/app_color.dart';
 
@@ -39,7 +40,7 @@ class AppText extends StatelessWidget {
           TextStyle(
             letterSpacing: 0,
             height: 0,
-            fontFamily: "Inter",
+            fontFamily: AppConstants.FONT_FAMILY,
             fontSize: fontSize ?? 20,
             fontWeight: fontWeight ?? FontWeight.w500,
             fontStyle: fontStyle ?? FontStyle.normal,

@@ -10,7 +10,9 @@ class AppConstants{
 
   static const String LANGUAGE_CODE = 'language_code';
   static const String COUNTRY_CODE = 'country_code';
-  static const String FONT_FAMILY = 'Inter';
+  static const String FONT_FAMILY = 'Fredoka';
+  static const String FONT_FAMILY_1 = 'Baloo2';
+  static const String FONT_FAMILY_2 = 'Montserrat';
 
   static RegExp emailValidator = RegExp(r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+");
   static RegExp passwordValidator = RegExp(r"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$");

@@ -5,10 +5,6 @@ import 'core/router/app_router.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // await TokenService().init();
-  // await TokenService().init();
-  // await AuthService.init();
-  // Get.put(NetworkController(), permanent: true);
   runApp(
     ProviderScope(
       child: MyApp(),

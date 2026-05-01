@@ -13,11 +13,13 @@ class NotificationPage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final notificationsAsync = ref.watch(notificationsProvider);
+    final size = MediaQuery.of(context).size;
 
     return Scaffold(
       backgroundColor: const Color(0xFF0F110C),
       body: Column(
         children: [
+          SizedBox(height: size.height * 0.2,),
           WoohooLogo(),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -30,7 +30,7 @@ class TipoOoScreen extends StatelessWidget {
                   // Pattern / Image Placeholder
                   Center(
                     child: Text(
-                      '',
+                      '  ',
                       style: TextStyle(
                         fontFamily: 'monospace',
                         color: Colors.white.withValues(alpha: 0.6),

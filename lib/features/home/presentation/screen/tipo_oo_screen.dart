@@ -23,24 +23,7 @@ class TipoOoScreen extends StatelessWidget {
             left: 0,
             right: 0,
             height: size.height * 0.35,
-            child: Container(
-              color: const Color(0xFFD66D26),
-              child: Stack(
-                children: [
-                  // Pattern / Image Placeholder
-                  Center(
-                    child: Text(
-                      '',
-                      style: TextStyle(
-                        fontFamily: 'monospace',
-                        color: Colors.white.withValues(alpha: 0.6),
-                        fontSize: 12,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            child: Image.asset("assets/images/tipoo.jpg"),
           ),
 
           // Scrollable Content

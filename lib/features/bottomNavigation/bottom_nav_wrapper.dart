@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/theme/app_color.dart';
 import '../connection/presentation/screen/connection_screen.dart';
+import '../discovery/presentation/screen/discovery_screen.dart';
 import '../profile/presentation/screen/profile_screen.dart';
 import 'widgets/custom_bottom_nav.dart';
 
@@ -14,10 +15,10 @@ class BottomNavWrapper extends ConsumerWidget {
 
   static const List<Widget> _pages = [
     HomePage(),
-    ChallengesScreen(),
-    SizedBox(), // Post/Create screen
+    DiscoveryScreen(),
+    SizedBox(),
     ConnectionsScreen(),
-    ProfileScreen(), // Profile screen
+    ProfileScreen(),
   ];
 
   @override

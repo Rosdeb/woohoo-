@@ -2,7 +2,9 @@ import 'package:deeraj/core/error/ErrorPage/errorpage.dart';
 import 'package:deeraj/core/router/route_names.dart';
 import 'package:deeraj/features/challenges/presentation/screen/challenges_screen.dart';
 import 'package:deeraj/features/home/presentation/screen/home_screen.dart';
+import 'package:deeraj/features/home/presentation/screen/tipo_oo_screen.dart';
 import 'package:deeraj/features/notification/presentation/notificationPage.dart';
+import 'package:deeraj/features/profile/presentation/screen/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -41,6 +43,18 @@ class MyAppRouter {
         name: AppRouteName.challenges_screen,
         pageBuilder: (context, state) =>
             MaterialPage(child: ChallengesScreen()),
+      ),
+      GoRoute(
+        path: AppPath.tipooo_screen,
+        name: AppRouteName.tipooo_screen,
+        pageBuilder: (context, state) =>
+            MaterialPage(child: TipoOoScreen()),
+      ),
+      GoRoute(
+        path: AppPath.profile_screen,
+        name: AppRouteName.profile_screen,
+        pageBuilder: (context, state) =>
+            MaterialPage(child: ProfileScreen()),
       ),
       // GoRoute(
       //   path: AppPath.notedetails,

@@ -26,7 +26,23 @@ class HomePage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const SizedBox(width: 48), // Spacer for balance
+                  IosTapEffect(
+                    onTap: () {
+                      context.push(AppPath.profile_screen);
+                    },
+                    child: Container(
+                      width: 40,
+                      height: 40,
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF1A1D1F),
+                        shape: BoxShape.circle,
+                        border: Border.all(color: AppColors.primary, width: 1.5),
+                      ),
+                      child: const Center(
+                        child: Icon(Icons.person, color: AppColors.primary, size: 24),
+                      ),
+                    ),
+                  ),
                   const WoohooLogo(),
                   IosTapEffect(
                     onTap: (){
@@ -117,10 +133,17 @@ class HomePage extends StatelessWidget {
               SizedBox(
                 height: 140,
                 child: Row(
-                  children: const [
-                    Expanded(child: TopPickCard(title: 'Bar Lune', location: 'Fitzroy - 0.8km', category: 'Cocktails - Late')),
-                    SizedBox(width: 15,),
-                    Expanded(child: TopPickCard(title: 'Tipo 00', location: 'Fitzroy - 1.2km', category: 'Italian - Dinner')),
+                  children: [
+                    const Expanded(child: TopPickCard(title: 'Bar Lune', location: 'Fitzroy - 0.8km', category: 'Cocktails - Late')),
+                    const SizedBox(width: 15,),
+                    Expanded(
+                      child: IosTapEffect(
+                        onTap: () {
+                          context.push(AppPath.tipooo_screen);
+                        },
+                        child: const TopPickCard(title: 'Tipo 00', location: 'Fitzroy - 1.2km', category: 'Italian - Dinner'),
+                      ),
+                    ),
                   ],
                 ),
               ),

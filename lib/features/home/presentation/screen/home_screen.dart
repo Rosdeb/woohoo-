@@ -77,15 +77,15 @@ class _HomePageState extends ConsumerState<HomePage> {
     final users = ref.read(mapUsersProvider);
     final Set<Marker> markers = {};
 
-    // for (final user in users) {
-    //   final icon = await _buildAvatarMarker(user);
-    //   markers.add(Marker(
-    //     markerId: MarkerId(user.id),
-    //     position: LatLng(user.lat, user.lng),
-    //     icon: icon,
-    //     onTap: () {},
-    //   ));
-    // }
+    for (final user in users) {
+      final icon = await _buildAvatarMarker(user);
+      markers.add(Marker(
+        markerId: MarkerId(user.id),
+        position: LatLng(user.lat, user.lng),
+        icon: icon,
+        onTap: () {},
+      ));
+    }
 
     // Dinner label marker
     markers.add(const Marker(

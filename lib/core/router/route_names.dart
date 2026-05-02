@@ -3,7 +3,7 @@ abstract class AppRouteName {
   static const splash   = 'splash';
   static const login    = 'login';
   static const register = 'register';
-  static const notedetails = 'notedetailScreen';
+  static const bottom_nav = '/bottom_nav_wrapper';
   static const createnoteScreen = 'createnoteScreen';
   static const editScreen  = '/editScreen';
   static const verifyscreen  = '/verifyscreen';
@@ -20,7 +20,7 @@ abstract class AppPath {
   static const login      = '/LoginScreen';
   static const register   = '/RegistrationScreen';
   static const home       = '/home_screen';
-  static const notedetails  = '/notedetailScreen';
+  static const bottom_nav = '/bottom_nav_wrapper';
   static const createnoteScreen  = '/createnoteScreen';
   static const editScreen  = '/editScreen';
   static const verifyscreen  = '/verifyscreen';

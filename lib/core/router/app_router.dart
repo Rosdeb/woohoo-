@@ -8,6 +8,7 @@ import 'package:deeraj/features/profile/presentation/screen/profile_screen.dart'
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../features/bottomNavigation/bottom_nav_wrapper.dart';
 import '../../features/splash/presentation/splash_screen.dart';
 
 // lib/Router/app_router.dart
@@ -55,6 +56,13 @@ class MyAppRouter {
         name: AppRouteName.profile_screen,
         pageBuilder: (context, state) =>
             MaterialPage(child: ProfileScreen()),
+      ),
+
+      GoRoute(
+        path: AppPath.bottom_nav,
+        name: AppRouteName.bottom_nav,
+        pageBuilder: (context, state) =>
+            MaterialPage(child: BottomNavWrapper()),
       ),
       // GoRoute(
       //   path: AppPath.notedetails,

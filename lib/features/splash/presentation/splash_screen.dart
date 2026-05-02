@@ -29,7 +29,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
 
     // 3. Navigate to Home
     if (mounted) {
-      context.goNamed(AppPath.home);
+      context.goNamed(AppPath.bottom_nav);
     }
   }
 
